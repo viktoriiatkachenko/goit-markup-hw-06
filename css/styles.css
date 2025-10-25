@@ -276,6 +276,7 @@ color: #404bbf;
         background-repeat: no-repeat;
         margin: 0 auto;
         padding: 72px 0;
+        max-width: 320px;
 }
 @media (min-resolution: 192dpi) {  
 .main-page {
@@ -284,7 +285,7 @@ color: #404bbf;
 }
 @media screen and (min-width: 768px) {
         .main-page {
-                
+                max-width: 768px;
                 padding: 112px 0;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_m.jpg);
         }
@@ -297,7 +298,7 @@ color: #404bbf;
 
 @media screen and (min-width: 1158px) {
         .main-page {
-
+max-width: 1440px;
                 padding: 188px 0;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_l.jpg);
         }
@@ -645,7 +646,7 @@ display: flex;
 transform: translateY(0%);
 }
 .portfolio-list-items {
-        width: 264px;
+        width: 288px;
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16),
                 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -676,6 +677,8 @@ text-align: center;
 }
 
 .footer {
+        display: flex;
+        justify-content: center;
         background-color: #2e2f42;
                 padding: 96px 0;
 }
@@ -683,6 +686,7 @@ text-align: center;
 @media only screen and (min-width: 1158px) {
   .footer {
           padding: 100px 0;
+          
   } 
 }
 .footer-container {
@@ -715,6 +719,7 @@ text-align: center;
 @media only screen and (min-width: 768px) {
         .footer-logo-soc-wrapper {
               display: inline-flex;
+              flex-direction: row;
         align-items: flex-start;
         text-align: left;
         gap: 24px;
