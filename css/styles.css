@@ -270,25 +270,42 @@ color: #404bbf;
 }
 
 .main-page {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_s.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         margin: 0 auto;
         padding: 72px 0;
 }
-
+@media (min-resolution: 192dpi) {  
+.main-page {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg@2x_s.jpg);
+}
+}
 @media screen and (min-width: 768px) {
         .main-page {
+                
                 padding: 112px 0;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_m.jpg);
         }
+                @media (min-resolution: 192dpi) {
+                        .main-page {
+                                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg@2_m.jpg);
+                        }
+                }
 }
 
 @media screen and (min-width: 1158px) {
         .main-page {
+
                 padding: 188px 0;
-                max-width: 1440px;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_l.jpg);
         }
+                @media (min-resolution: 192dpi) {
+                        .main-page {
+                                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg@2x_l.jpg);
+                        }
+                }
 }
 
 .heading {
@@ -678,7 +695,6 @@ text-align: center;
 
 @media only screen and (min-width: 768px) {
   .footer-container {
-          margin-left: 108px;
           align-items: baseline;    
            
   }
@@ -708,6 +724,7 @@ text-align: center;
 @media only screen and (min-width: 1158px) {
         .footer-logo-soc-wrapper {
                 gap: 120px;
+                flex-direction: row;
         }
 }
 
