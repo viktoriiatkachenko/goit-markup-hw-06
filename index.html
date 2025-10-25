@@ -25,12 +25,18 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        
         <nav class="nav">
           <a class="logo header-logo" href="./index.html"
-            >Web<span class="logo-web-header">Studio</span></a>
+            >Web<span class="logo-web-header">Studio</span></a
+          >
 
-          <ul class="nav-list hidden">
+          <button type="button" class="button-mobile-menu">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list">
             <li class="nav-list-items">
               <a class="nav-list-link current" href="./index.html">Studio</a>
             </li>
@@ -43,7 +49,7 @@
           </ul>
         </nav>
 
-        <address class="address hidden">
+        <address class="address">
           <ul class="address-list">
             <li class="address-list-items">
               <a class="address-list-link" href="mailto:info@devstudio.com"
@@ -475,17 +481,24 @@
           </ul>
         </div>
         <div class="subscribe-wrapper-footer">
-        <p class="caption-footer">Subscribe</p>
-        <form class="form-footer">
-          <label class="footer-form-label" for="email">
-          <input class="email-input-footer" type="email" name="email" id="email" placeholder="E-mail">
-          </label>
-    
-          <button type="submit" class="footer-subscribe-btn">Subscribe
-            <svg class="footer-subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#send"></use>
-            </svg>
-          </button>
+          <p class="caption-footer">Subscribe</p>
+          <form class="form-footer">
+            <label class="footer-form-label" for="email">
+              <input
+                class="email-input-footer"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -493,13 +506,12 @@
 
     <div class="backdrop visually-hidden">
       <div class="modal visually-hidden">
-
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-exit"></use>
           </svg>
         </button>
-        
+
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="contact">
           <div class="modal-form-field">
@@ -550,20 +562,20 @@
           </div>
           <div class="modal-checkbox">
             <input
-            class="visually-hidden"
-            type="checkbox"
-            value="true"
-            name="user-privacy"
-            id="user-privacy" 
-          />
-            <label class="modal-form-label-checkbox"
-              for="user-privacy">
+              class="visually-hidden"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              id="user-privacy"
+            />
+            <label class="modal-form-label-checkbox" for="user-privacy">
               <span class="agreement-checkbox">
                 <svg class="agreement-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the <a class="privacy-link" href="">Privacy Policy</a>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-btn-submit" type="submit">Send</button>
