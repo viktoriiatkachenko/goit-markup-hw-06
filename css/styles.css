@@ -506,6 +506,11 @@ display: flex;
   }
 }
 
+@media only screen and (min-width: 1158px) {
+        .team-list {
+                flex-wrap: nowrap;
+        }
+}
 
 .team-list-items {
 width: 264px;
@@ -514,6 +519,11 @@ border-radius: 0px 0px 4px 4px;
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 #2e2f4229, 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+@media only screen and (min-width: 1158px) {
+  .team-list-items {
+  width: calc((100% - 72px) / 4);
+  }
+}
 .team-names {
         font-weight: 500;
         font-size: 20px;
