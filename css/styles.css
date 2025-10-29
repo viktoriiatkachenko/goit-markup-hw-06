@@ -32,13 +32,11 @@ input {
 @media (min-width: 768px) { 
         .container {
         max-width: 768px;
-        padding: 0 16px;
         }   
 }
 @media (min-width: 1158px) {
         .container {
-                max-width: 1158px;
-                padding: 0 16px;            
+                max-width: 1158px;            
         }
 }
 .visually-hidden {
@@ -524,6 +522,7 @@ border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
   }
 }
+
 .team-names {
         font-weight: 500;
         font-size: 20px;
